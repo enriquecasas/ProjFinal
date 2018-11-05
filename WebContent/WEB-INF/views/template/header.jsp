@@ -1,88 +1,139 @@
-    <header class="app-header"><a class="app-header__logo" href="/sprintemplate/main/bienvenido">SysCoco</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
-      <ul class="app-nav">
-        <li class="app-search">
-          <input class="app-search__input" type="search" placeholder="Search">
-          <button class="app-search__button"><i class="fa fa-search"></i></button>
-        </li>
-        <!--Notification Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-          <ul class="app-notification dropdown-menu dropdown-menu-right">
-            <li class="app-notification__title">You have 4 new notifications.</li>
-            <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Lisa sent you a mail</p>
-                    <p class="app-notification__meta">2 min ago</p>
-                  </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Mail server not working</p>
-                    <p class="app-notification__meta">5 min ago</p>
-                  </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Transaction complete</p>
-                    <p class="app-notification__meta">2 days ago</p>
-                  </div></a></li>
-              <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Lisa sent you a mail</p>
-                      <p class="app-notification__meta">2 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Mail server not working</p>
-                      <p class="app-notification__meta">5 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Transaction complete</p>
-                      <p class="app-notification__meta">2 days ago</p>
-                    </div></a></li>
-              </div>
-            </div>
-            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+   <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <!-- Sidebar Header    -->
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <!-- User Info-->
+          <div class="sidenav-header-inner text-center"><img src="img/avatar-7.jpg" alt="person" class="img-fluid rounded-circle">
+            <h2 class="h5">Nathan Andrews</h2><span>Web Developer</span>
+          </div>
+          <!-- Small Brand information, appears on minimized sidebar-->
+          <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <strong>B</strong><strong class="text-primary">D</strong></a></div>
+        </div>
+        <!-- Sidebar Navigation Menus-->
+        <div class="main-menu">
+          <h5 class="sidenav-heading">Main</h5>
+          <ul id="side-main-menu" class="side-menu list-unstyled">                  
+            <li><a href="index.html"> <i class="icon-home"></i>Home                             </a></li>
+            <li><a href="forms.html"> <i class="icon-form"></i>Gestionar Dosificado                             </a></li>
+            <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Gestionar Almacén                             </a></li>
+            <li><a href="tables.html"> <i class="icon-grid"></i>Gestionar Compra                             </a></li>
+            <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
+              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+              </ul>
+            </li>
+            <li><a href="login.html"> <i class="icon-interface-windows"></i>Login page                             </a></li>
+            <li> <a href="#"> <i class="icon-mail"></i>Demo
+                <div class="badge badge-warning">6 New</div></a></li>
           </ul>
-        </li>
-        <!-- User Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+        </div>
+        <div class="admin-menu">
+          <h5 class="sidenav-heading">Second menu</h5>
+          <ul id="side-admin-menu" class="side-menu list-unstyled"> 
+            <li> <a href="#"> <i class="icon-screen"> </i>Demo</a></li>
+            <li> <a href="#"> <i class="icon-flask"> </i>Demo
+                <div class="badge badge-info">Special</div></a></li>
+            <li> <a href=""> <i class="icon-flask"> </i>Demo</a></li>
+            <li> <a href=""> <i class="icon-picture"> </i>Demo</a></li>
           </ul>
-        </li>
-      </ul>
-    </header>
-    <!-- Sidebar menu-->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-    <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
-        <div>
-          <p class="app-sidebar__user-name">John Doe</p>
-          <p class="app-sidebar__user-designation">Frontend Developer</p>
         </div>
       </div>
-      <ul class="app-menu">
-        <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">CRUD</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="user"><i class="icon fa fa-circle-o"></i> Usuario</a></li>
-            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
-          </ul>
-        </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Reportes</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-            <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
-          </ul>
-        </li>        
-      </ul>
-    </aside>
+    </nav>
+    <div class="page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text d-none d-md-inline-block"><span>Bootstrap </span><strong class="text-primary">Dashboard</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Notifications dropdown-->
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell"></i><span class="badge badge-warning">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-envelope"></i>You have 6 new messages </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-upload"></i>Server Rebooted</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-bell"></i>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Messages dropdown-->
+                <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope"></i><span class="badge badge-info">10</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Jason Doe</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Frank Williams</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Ashley Wood</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-envelope"></i>Read all messages    </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Languages dropdown    -->
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
+                  <ul aria-labelledby="languages" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2"><span>French                                                         </span></a></li>
+                  </ul>
+                </li>
+                <!-- Log out-->
+                <li class="nav-item"><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline-block">Logout</span><i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Counts Section -->
+      
+      
+      <!-- Header Section-->
+      <section class="dashboard-header section-padding">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-md-stretch">
+            <!-- Line Chart -->
+            <div class="col-lg-6 col-md-12 flex-lg-last flex-md-first align-self-baseline">
+              <div class="card sales-report">
+                <h2 class="display h4">Sales marketing report</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet officiis</p>
+                <div class="line-chart">
+                  <canvas id="lineCahrt"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+     
+    </div>
+   
+ 
