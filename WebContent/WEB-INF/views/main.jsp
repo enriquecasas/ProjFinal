@@ -8,7 +8,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <spring:url value="/recursos" var="urlrecursos"></spring:url>
 	<link href="${urlrecursos}/css/template.css" rel="stylesheet">
 	<link rel="stylesheet" href="${urlrecursos}/vendor/bootstrap/css/bootstrap.min.css">
@@ -33,12 +32,7 @@ boto -->
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-	
-	
-	
-	
-	
-	
+
   </head>
   <body class="app sidebar-mini rtl">
   <!-- Navbar-->
@@ -54,13 +48,7 @@ boto -->
           <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
         </ul>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="tile">
-            <div class="tile-body">Create a beautiful dashboard</div>
-          </div>
-        </div>
-      </div>
+     
     </main>
     <!-- Essential javascripts for application to work-->
     <!-- JavaScript files-->
