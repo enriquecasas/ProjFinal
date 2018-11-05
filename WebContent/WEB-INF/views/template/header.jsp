@@ -29,7 +29,7 @@
 					data-toggle="collapse"><i class="icon-form"></i>Gestionar
 						Dosificado</a>
 					<ul id="DosificadoDropdown" class="collapse list-unstyled ">
-						<li><a href="#">Page</a></li>
+						<li><a href="user">User</a></li>
 						<li><a href="#">Page</a></li>
 						<li><a href="#">Page</a></li>
 					</ul></li>
